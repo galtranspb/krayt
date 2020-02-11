@@ -7,3 +7,4 @@ import './fire-extinguisher.svg';
 import './life-ring.svg';
 import './paint-brush.svg';
 import './tags.svg';
+import './reasons-bg.png';

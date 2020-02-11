@@ -56,6 +56,11 @@ body {
 
       border-bottom: 2px solid #eeeeee;
     }
+
+    &--reasons {
+      width: 520px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -68,6 +73,14 @@ body {
     &--features {
       padding-top: 120px;
       padding-bottom: 120px;
+    }
+
+    &--reasons {
+      padding-top: 50px;
+      padding-bottom: 100px;
+
+      background-image: url("/assets/img/reasons-bg.png");
+      background-repeat: no-repeat;
     }
   }
 }

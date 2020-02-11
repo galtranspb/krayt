@@ -12,6 +12,14 @@
     line-height: 24px;
     text-align: center;
   }
+
+  &--reasons {
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
