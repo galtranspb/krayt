@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "robotolight";
+  src:
+    local("OpenSans Bold"),
+    url("/assets/fonts/Roboto/roboto-light-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "robotomedium";
+  src:
+    local("OpenSans Bold"),
+    url("/assets/fonts/Roboto/roboto-medium-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "robotoregular";
+  src:
+    local("OpenSans Bold"),
+    url("/assets/fonts/Roboto/roboto-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "dosis";
+  src:
+    local("OpenSans Bold"),
+    url("/assets/fonts/Dosis/dosis-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
