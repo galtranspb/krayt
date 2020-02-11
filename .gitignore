@@ -3,9 +3,9 @@
 *.ai
 *.log
 *.psd
-*.png
 *.sublime*
 node_modules/
 npm-debug.*
 Thumbs.db
 public/
+psd_template/

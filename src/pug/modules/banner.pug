@@ -1,0 +1,20 @@
+-
+  const features = [
+    'Unlimited colors: banner with images, slider or video',
+    'Fully Responsive and powered by HTML5 and CSS3',
+    'Very easy to customize : set up in minutes'];
+
+section.banner
+  .container
+    .banner__wrapper
+      h2.banner__title A Powerful & Unique App Landing Template
+      p.banner__content
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      ul.banner__list
+        each feature in features
+          li.banner__item
+            .banner__icon
+              include ../../assets/img/check-circle-solid.svg
+            span.banner__content=feature
+      a.button(href="#") Start Exploring Us
