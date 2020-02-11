@@ -1,0 +1,11 @@
+.nav__logo {
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .nav__logo {
+    align-self: auto;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,15 @@
+- const links = ['Home', 'Features', 'Pricing'];
+
+header.header
+  nav.nav.container
+    .logo.nav__logo
+      img.logo__img(src="/assets/img/logo.svg", alt="Giant" width="48" hight="40")
+      span.logo__content Giant
+    .menu
+      ul.menu__list
+        each link in links
+          li.menu__item
+            a.menu__link(href=`/${link}`)=link
+      button.button.menu__button(type="button") Download Now
+
+

@@ -1,1 +1,35 @@
+body {
+  min-width: 320px;
+  margin: 0;
 
+  font-weight: normal;
+  font-style: normal;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  font-family: $mainFont;
+  color: $mainColor;
+
+  background-color: $mainBGColor;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
