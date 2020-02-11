@@ -1,3 +1,9 @@
 import './logo.svg';
-import './check-circle-solid.svg';
+import './check-circle.svg';
 import './banner-bg.png';
+import './cog.svg';
+import './file-alt.svg';
+import './fire-extinguisher.svg';
+import './life-ring.svg';
+import './paint-brush.svg';
+import './tags.svg';

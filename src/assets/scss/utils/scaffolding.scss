@@ -12,21 +12,49 @@ body {
   background-color: $mainBGColor;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .container {
+  padding: 0 30px;
+
   &--header {
     display: flex;
     flex-flow: column;
+  }
+
+  &--features {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    border-bottom: 2px solid #eeeeee;
   }
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    padding: 0 30px;
-
     &--header {
       flex-flow: row;
       justify-content: space-between;
       align-items: center;
+    }
+
+    &--features {
+      padding-top: 120px;
+      padding-bottom: 120px;
+
+      border-bottom: 2px solid #eeeeee;
     }
   }
 }
@@ -36,5 +64,10 @@ body {
     width: 1140px;
     margin: 0 auto;
     padding: 0;
+
+    &--features {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
   }
 }
