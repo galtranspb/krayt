@@ -14,4 +14,15 @@
   border-radius: 17px;
   outline: none;
   cursor: pointer;
+
+  &--pricing {
+    background-color: #fff;
+
+    border: 1px solid #eeeeee;
+  }
+
+  &--pricing:hover,
+  &--pircing:focus {
+    background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+  }
 }

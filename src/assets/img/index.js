@@ -11,3 +11,4 @@ import './reasons-bg.png';
 import './screenshots-bg.png';
 import './screenshots-first.jpg';
 import './arrow.svg';
+import './prices-bg.png';

@@ -20,6 +20,16 @@
     line-height: 36px;
     text-align: center;
   }
+
+  &--pricing {
+    text-align: center;
+  }
+
+  &--box-pricing {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -27,6 +37,14 @@
     text-align: left;
 
     &--screenshots {
+      text-align: center;
+    }
+
+    &--pricing {
+      text-align: center;
+    }
+
+    &--box-pricing {
       text-align: center;
     }
   }

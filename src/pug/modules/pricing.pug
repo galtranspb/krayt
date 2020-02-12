@@ -1,0 +1,23 @@
+-
+  const packages = [
+    {title: "Basic", price: "12.0", content: ["One User", "Multiple Access", "SMS Support", "24/7 Online Support"]},
+    {title: "Standard", price: "24.0", content: ["Five Users", "Multiple Access", "SMS Support", "24/7 Online Support"]},
+    {title: "Premium", price: "250.0", content: ["Twenty Users", "Multiple Access", "SMS Support", "24/7 Online Support"]},
+    {title: "Enterprise", price: "999.0", content: ["Unlimited Users", "Multiple Access", "SMS Support", "24/7 Online Support"]}
+  ]
+
+section.pricing
+  .container
+    h2.title.title--pricing We've got the perfect package for you
+    .pricing__content.pricing__content--first
+      |  Everyone’s reasons for learning user interface design are different.
+      |  If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+    ul.pricing__list
+      each offer in packages
+        li.pricing__item
+          h3.title.title--box-pricing.pricing__title=offer.title
+          .pricing__cost=offer.price
+          each item in offer.content
+            p.pricing__content.pricing__content--offer=item
+          p.pricing__content Start Free Trial
+          a.button.button--pricing(href=`/${offer.title}` id=`/${offer.title}`) Buy Now
