@@ -12,3 +12,5 @@ import './screenshots-bg.png';
 import './screenshots-first.jpg';
 import './arrow.svg';
 import './prices-bg.png';
+import './video-bg.jpg';
+
