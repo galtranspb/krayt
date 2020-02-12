@@ -19,9 +19,11 @@
 
   color: white;
 
+  outline: none;
+
   &:hover,
   &:focus {
-    color: #f31f79;
+    color: $secondaryColor;
   }
 }
 

@@ -7,9 +7,13 @@ section.screenshots
     .slider
       ul.screenshots__list
         li.screenshots__item
-          img.screenshots__img(src="/assets/img/screenshots-first.jpg", alt="slide 1" width="320" heigth="500")
+          img.screenshots__img(src="/assets/img/screenshots-first.jpg", alt="slide 1" width="320")
       .slider__controls
-        button.slider__button.slider__button--prev(id="prev" type="button") previous
-        button.slider__button.slider__button--next(id="next" type="button") next
+        button.slider__button.slider__button--prev(id="screenshots-prev" type="button") previous
+          span.slider__icon.slider__icon--prev
+            include ../../assets/img/arrow.svg
+        button.slider__button.slider__button--next(id="screenshots-next" type="button") next
+          span.slider__icon.slider__icon--next
+            include ../../assets/img/arrow.svg
 
 

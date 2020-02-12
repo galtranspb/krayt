@@ -44,29 +44,32 @@
       right: 0;
     }
 
-    &::before {
-      content: url("/assets/img/arrow.svg");
+    &:focus,
+    &:hover {
+      color: #fff;
 
-      position: absolute;
-      left: 11px;
-
-      width: 14px;
-      height: 7px;
+      background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
     }
+  }
 
-    &--prev::before {
-      top: 18px;
+  .slider__icon {
+    position: absolute;
+
+    display: block;
+
+    width: 23px;
+    height: 11px;
+
+    &--prev {
+      left: 5px;
+      top: 19px;
 
       transform: rotate(180deg);
     }
 
-    &--next::before {
-      top: 10px;
-    }
-
-    &:focus,
-    &:hover {
-      background-image: linear-gradient(to right, #fd712c 0%, #f21780 100%);
+    &--next {
+      left: 7px;
+      top: 4px;
     }
   }
 }

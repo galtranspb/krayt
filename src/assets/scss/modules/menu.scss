@@ -24,6 +24,15 @@
   text-decoration: none;
   text-align: center;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $hoveredColor;
+  }
+
+  &:visited {
+    color: $visitedColor;
+  }
 }
 
 .menu__button {

@@ -17,10 +17,14 @@ section.testimonials
           li.testimonials__item(class= i===1 ? "testimonials__item--active" : "")
             p.testimonials__message=post.message
             .testimonials__wrapper.testimonials__wrapper--first
-              img.testimonials__img(src=`/assets/img/${post.avatar}` alt=post.author width="80" heigth="80")
+              img.testimonials__img(src=`/assets/img/${post.avatar}` alt=post.author width="80")
               .testimonials__wrapper
                 p.testimonial__author=post.author
                 p.testimonial__company=post.company
       .slider__controls
-        button.slider__button.slider__button--prev(id="prev" type="button") previous
-        button.slider__button.slider__button--next(id="next" type="button") next
+        button.slider__button.slider__button--prev(id="testemonials-prev" type="button") previous
+          span.slider__icon.slider__icon--prev
+            include ../../assets/img/arrow.svg
+        button.slider__button.slider__button--next(id="testemonials-next" type="button") next
+          span.slider__icon.slider__icon--next
+            include ../../assets/img/arrow.svg

@@ -3,7 +3,8 @@
 header.header
   nav.nav.container.container--header
     .logo.nav__logo
-      img.logo__img(src="/assets/img/logo.svg", alt="Giant" width="48" hight="40")
+      span.logo__icon
+        include ../../assets/img/logo.svg
       span.logo__content Giant
     .menu
       ul.menu__list
@@ -11,5 +12,3 @@ header.header
           li.menu__item
             a.menu__link(href=`/${link}`)=link
       button.button.menu__button(type="button") Download Now
-
-

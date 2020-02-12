@@ -3,32 +3,32 @@
     {
       title: "Sell any product online",
       content: "Over 92% of computers are infected with Adware and spyware. Such software is rarely accompanied by uninstall utility and even when it is it almost always leaves broken Windows Registry keys behind it.",
-      icon: "/assets/img/tags.svg"
+      icon: "tags"
     },
         {
       title: "Very easy to customize",
       content: "Many of us are so used to working on a computer desktop that when it comes time to purchase a new computer, we don’t consider other options.",
-      icon: "/assets/img/cog.svg"
+      icon: "cog"
     },
     {
       title: "Unlimited colors",
       content: "Audio player software is used to play back sound recordings in one of the many formats available for computers today.",
-      icon: "/assets/img/paint-brush.svg"
+      icon: "paint-brush"
     },
     {
       title: "Responsive, HTML5, CSS3",
       content: "Computers have become ubiquitous in almost every facet of our lives. At work, desk jockeys spend hours in front of their desktops, while delivery people scan bar codes with handhelds and workers in the field stay in touch with the central office via their notebooks.",
-      icon: "/assets/img/fire-extinguisher.svg"
+      icon: "fire-extinguisher"
     },
     {
       title: "Designed to convert",
       content: "If you are looking for a new way to promote your business that won’t cost you more money, maybe printing is one of the options you won’t resist.",
-      icon: "/assets/img/file-alt.svg"
+      icon: "file-alt"
     },
     {
       title: "With no boundaries",
       content: "Now, if you are interested in being the best player, getting really good money and knowing some tricks and advices of what to do in a live tournament games, here is the best place to learn them.",
-      icon: "/assets/img/life-ring.svg"
+      icon: "life-ring"
     }
   ]
 
@@ -36,8 +36,9 @@ section.features
   h2.visually-hidden Features
   .container.container--features
     ul.features__list
-      each feature, i in features
+      each feature in features
         li.features__item
-          span.features__icon(class=`features__icon--${i+1}`)
+          span.features__icon(class=`features__icon--${feature.icon}`)
+            +joinSVG(feature.icon)
           h3.title.title--features=feature.title
           p.feature__content=feature.content

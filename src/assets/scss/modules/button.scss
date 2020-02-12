@@ -15,6 +15,11 @@
   outline: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $btnFocusedColor;
+  }
+
   &--pricing {
     background-color: #fff;
 
