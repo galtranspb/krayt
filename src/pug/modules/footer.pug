@@ -1,0 +1,22 @@
+- const links = ["facebook", "twitter", "dribbble", "behance"];
+
+mixin joinSVG(path)
+  if path==="facebook"
+      include ../../assets/img/facebook.svg
+  else if path==="twitter"
+      include ../../assets/img/twitter.svg
+  else if path==="dribbble"
+      include ../../assets/img/dribbble.svg
+  else
+      include ../../assets/img/behance.svg
+
+footer.footer
+  .container.container--footer
+    ul.footer__social
+      each link in links
+        li.footer__item
+          a.footer__link(href=`https://www.${link}.html` target="_blank")
+            span.visually-hidden=link
+            span.footer__icon(class=`footer__icon--${link}`)
+              +joinSVG(link)
+    p.footer__content Copyright © 2017  |  UXSEVEN - a sister concern of codepixar.com

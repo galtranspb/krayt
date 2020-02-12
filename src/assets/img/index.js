@@ -19,3 +19,8 @@ import './third.jpg';
 import './mac_icon.png';
 import './android_icon.png';
 import './windows_icon.png';
+
+import './behance.svg';
+import './dribbble.svg';
+import './facebook.svg';
+import './twitter.svg';
