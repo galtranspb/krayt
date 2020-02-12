@@ -1,0 +1,26 @@
+-
+  const feedbacks = [
+    {author: "Alexandra Bullock", company: "Apple Inc", avatar: "first.jpg", message: "The JustLanded for WordPress theme is great, super easy to use and to customize and the support is just awesome: super fast and reliable."},
+    {author: "Gary Sebastian", company: "Apple Inc", avatar: "second.jpg", message: "Very happy with the theme and incredibly easy to configure, well done! I cannot emphasize how awesome this theme and developer support are."},
+    {author: "Samantha Bilbau", company: "Apple Inc", avatar: "third.jpg", message: "Definitely a great theme and the support team are fantastic. Customer support is numero uno and ShapingRain have got this spot on. Cheers guys.."}
+  ]
+
+section.testimonials
+  .container
+    h2.title.title--testimonials What our customers are saying
+    p.testimonials__content.testimonials__content--first
+      | Everyone’s reasons for learning user interface design are different.
+      | If you’re already a developer, or a PM, or a UX designer, why develop this totally separate skill?
+    .slider
+      ul.testimonials__list
+        each post, i in feedbacks
+          li.testimonials__item(class= i===1 ? "testimonials__item--active" : "")
+            p.testimonials__message=post.message
+            .testimonials__wrapper.testimonials__wrapper--first
+              img.testimonials__img(src=`/assets/img/${post.avatar}` alt=post.author width="80" heigth="80")
+              .testimonials__wrapper
+                p.testimonial__author=post.author
+                p.testimonial__company=post.company
+      .slider__controls
+        button.slider__button.slider__button--prev(id="prev" type="button") previous
+        button.slider__button.slider__button--next(id="next" type="button") next

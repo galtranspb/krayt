@@ -13,4 +13,6 @@ import './screenshots-first.jpg';
 import './arrow.svg';
 import './prices-bg.png';
 import './video-bg.jpg';
-
+import './first.jpg';
+import './second.jpg';
+import './third.jpg';
