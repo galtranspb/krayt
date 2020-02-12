@@ -8,3 +8,6 @@ import './life-ring.svg';
 import './paint-brush.svg';
 import './tags.svg';
 import './reasons-bg.png';
+import './screenshots-bg.png';
+import './screenshots-first.jpg';
+import './arrow.svg';

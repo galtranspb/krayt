@@ -25,5 +25,9 @@
 @media (min-width: $desktop-width) {
   .title {
     text-align: left;
+
+    &--screenshots {
+      text-align: center;
+    }
   }
 }
