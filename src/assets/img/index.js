@@ -16,3 +16,6 @@ import './video-bg.jpg';
 import './first.jpg';
 import './second.jpg';
 import './third.jpg';
+import './mac_icon.png';
+import './android_icon.png';
+import './windows_icon.png';

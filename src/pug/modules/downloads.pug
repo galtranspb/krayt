@@ -1,0 +1,19 @@
+-
+  const sourses = [
+    {icon: "mac_icon.png", width: 41, heigth: 50, content: "Download from app store", href: "/mac.html"},
+    {icon: "android_icon.png", width: 43, heigth: 50, content: "Download from play store", href: "/android.html"},
+    {icon: "windows_icon.png", width: 50, heigth: 50, content: "Download from microsoft store", href: "/windows.html"}]
+
+section.downloads
+  .container
+    h2.title.title--downloads.downloads__title Download Giant App Now
+    ul.downloads__list
+      each src in sourses
+        li.downloads__item
+          a.downloads__link(href=src.href)
+            .downloads__wrapper
+              img.downloads__img(src=`/assets/img/${src.icon}` alt=src.icon.replace('.png', '') width=src.width heigth=src.heigth)
+            .downloads__wrapper
+              p.downloads__subtitle
+                b Download
+              span.downloads__content=src.content
